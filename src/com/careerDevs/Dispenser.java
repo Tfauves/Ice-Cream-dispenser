@@ -1,23 +1,30 @@
 package com.careerDevs;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Dispenser {
 
+    List<IceCream> iceCreams = new ArrayList<>();
+    public int temp;
 
-    public int tankFillLvl;
+    public Dispenser(int temp) {
 
-
-    public Dispenser(int tankFillLvl) {
-        this.tankFillLvl = tankFillLvl;
+        this.temp = temp;
     }
 
 
-    public void dispenseIceCream() {
-
-        tankFillLvl -= 10;
+    public void setOverrun() {
 
     }
 
-    public void Clean() {
+    public void serveIceCream(String flavor) {
+
+
+    }
+
+    public void clean() {
+
 
     }
 
