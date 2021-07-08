@@ -1,5 +1,13 @@
 package com.careerDevs;
 
 public class IceCream {
-    String flavor;
+    public String flavor;
+    public int bagVol;
+
+   public IceCream(String flavor, int bagVol) {
+       this.flavor = flavor;
+       this.bagVol = bagVol;
+
+   }
+
 }
