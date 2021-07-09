@@ -6,14 +6,11 @@ public class Hopper {
     public int minLvl;
 
     public Hopper(int fillLvl, int minLvl) {
-
         this.fillLvl = fillLvl;
         this.minLvl = minLvl;
-
-
     }
 
-    public int refill() {
+    public int refill(int bagVol) {
        return fillLvl++;
     }
 
