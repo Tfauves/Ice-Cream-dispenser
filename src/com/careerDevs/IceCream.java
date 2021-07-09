@@ -7,7 +7,6 @@ public class IceCream {
    public IceCream(String flavor, int bagVol) {
        this.flavor = flavor;
        this.bagVol = bagVol;
-
    }
 
 }

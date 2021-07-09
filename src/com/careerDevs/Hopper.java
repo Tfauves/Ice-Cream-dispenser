@@ -1,7 +1,7 @@
 package com.careerDevs;
 
 public class Hopper {
-    public final int HOPPER_CAPACITY_IN_GAL = 3;
+    public int capacityInGal = 3;
     public int fillLvl;
     public int minLvl;
 
@@ -13,13 +13,12 @@ public class Hopper {
 
     }
 
-    public void refill() {
-        fillLvl++;
+    public int refill() {
+       return fillLvl++;
     }
 
-    public String dispense() {
-//factor overrun
-        fillLvl--;
-        return "";
+    public int dispense() {
+
+        return fillLvl--;
     }
 }

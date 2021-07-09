@@ -1,33 +1,22 @@
 package com.careerDevs;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Dispenser {
+    public Hopper hopper;
 
-    List<IceCream> iceCreams = new ArrayList<>();
-    public int temp;
+    public Dispenser() {
 
-    public Dispenser(int temp) {
-
-        this.temp = temp;
-    }
-
-
-    public void setOverrun() {
+        hopper = new Hopper(100,25);
 
     }
 
-    public void serveIceCream(String flavor) {
+    public void serveIceCream() {
+        int vol;
+        vol = hopper.dispense();
 
+        System.out.println(vol);
 
+        if (hopper.fillLvl == hopper.minLvl) {
+            System.out.println("you need to refill the hopper");
+        }
     }
-
-    public void clean() {
-
-
-    }
-
-
-
 }
