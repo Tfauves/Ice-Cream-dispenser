@@ -1,23 +1,27 @@
 package com.careerDevs;
 
+
+
 public class Dispenser {
     public Hopper hopper;
     public IceCream softServe;
 
     public Dispenser() {
-        softServe = new IceCream("Black Raspberry", 3);
-        hopper = new Hopper(softServe.bagVol,1, 3.5);
+        softServe = new IceCream("Black Raspberry", 0.2);
+        hopper = new Hopper(softServe.bagVol);
+
 
     }
 
     public void serveIceCream() {
-        hopper.fillLvl--;
+        //hopper.fillLvl--;
 
-        if (hopper.fillLvl <= hopper.minLvl) {
-            System.out.printf("The hopper has %d gallons of %s flavored liquid ice cream. Please refill.\n",hopper.fillLvl ,softServe.flavor);
+        if (hopper.fillLvl <= hopper.MIN_LEVEL) {
+            System.out.printf("The hopper has %f gallons of %s flavored liquid ice cream. Please refill.\n",hopper.fillLvl ,softServe.flavor);
         }
 
         hopper.dispense();
 
     }
+
 }

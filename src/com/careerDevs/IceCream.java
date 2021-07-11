@@ -2,9 +2,9 @@ package com.careerDevs;
 
 public class IceCream {
     public String flavor;
-    public int bagVol;
+    public double bagVol;
 
-   public IceCream(String flavor, int bagVol) {
+   public IceCream(String flavor, double bagVol) {
        this.flavor = flavor;
        this.bagVol = bagVol;
    }
