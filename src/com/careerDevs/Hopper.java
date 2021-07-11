@@ -1,7 +1,6 @@
 package com.careerDevs;
 
 public class Hopper {
-    public double capacityInGal;
     public double fillLvl;
     final double MIN_LEVEL = 1.0;
 
@@ -11,14 +10,16 @@ public class Hopper {
     }
 
     public double refill(double bagVol) {
-       return fillLvl++;
+        double bagVolInOz = (bagVol * 128);
+       return fillLvl = bagVolInOz;
     }
 
     public void dispense() {
-        double totalServings = Math.round((fillLvl * 128) / 3.5);
         double servingSize  = 3.5;
-//        fillLvl--;
-        double iceCreamServed = totalServings - servingSize;
-        //System.out.println(iceCreamServed);
+        double afterServFillLvl = (fillLvl - servingSize);
+
+
+//        System.out.println(fillLvl);
+        System.out.println(afterServFillLvl);
     }
 }

@@ -7,6 +7,6 @@ public class Main {
         Dispenser IceCreamDispenser1 = new Dispenser();
 
         IceCreamDispenser1.serveIceCream();
-        IceCreamDispenser1.serveIceCream();
+       // IceCreamDispenser1.serveIceCream();
     }
 }
